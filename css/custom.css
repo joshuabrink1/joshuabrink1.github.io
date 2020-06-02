@@ -1,0 +1,214 @@
+#wp, #vin,#cont, #vinView {
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.title-border {
+    border: solid 2px white;
+    padding: 1rem;
+}
+
+.title-border h2 {
+    margin: 0;
+    font-size: 2.8rem;
+    text-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+}
+
+.border {
+    border: solid 1px white;
+    border-radius: 7px;
+    padding: 1rem;
+}
+
+.sub-title {
+    font-weight: 400;
+    text-align: center;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-size: 1.85rem;
+    filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.61));
+    -webkit-filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.61));
+    -moz-filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.61));
+}
+
+.sub-title+ p {
+    text-align: center;
+    font-size: 1.19rem;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-title img {
+    width: 3rem;
+    vertical-align: middle;
+}
+
+.about-text {
+    text-align: left;
+    font-size: 1rem;
+}
+
+
+.price h4 {
+     text-align: -webkit-center;
+     font-weight: 400;
+     font-family: 'Great Vibes';
+     font-size: 3.45rem;
+     text-transform: none;
+     margin: 0;
+     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.price img:nth-of-type(1) {
+    width: 100%;
+    position: relative;
+    z-index: -12;
+}
+
+.price img:nth-of-type(2) {
+    width: 87%;
+    margin-top: -239px;
+    position: absolute;
+}
+
+.price span {
+    font-size: 1rem;
+    text-transform: lowercase;
+    letter-spacing: 0ch;
+}
+@media screen and (max-width: 480px){
+    #switchContainer {
+        height: 57vw !important;
+    }
+    .bolded {
+        font-weight:500 !important;
+        font-size: 0.7rem !important;
+        background: rgba(255, 255, 255, 0.275) !important;
+    }
+    #swap {
+        left: 80% !important;
+        top: 64% !important;
+        width: 3rem !important;
+        height: 3rem !important;
+
+    }
+}
+
+@media screen and (max-width:  767px) {
+    .price img:nth-of-type(2) {
+        display: none
+    } 
+}
+@media screen and (min-width: 1680px) {
+
+    .price img:nth-of-type(2) {
+        display: none
+    } 
+
+}
+
+.description {
+    margin: 0 0 1rem 0;
+    text-align: justify;
+}
+.description a {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.description span {
+    font-style: italic;
+}
+
+.inverse {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 26px;
+}
+
+.inverse .sub-title {
+    color: black;
+    filter: none !important;
+    margin-top: 7px;
+    margin-bottom: 24px;
+}
+
+.inverse a {
+    border-bottom: dotted 1px rgba(0, 0, 0, 0.5);
+}
+
+.bolded {
+    font-weight:600;
+     font-size: 1rem;
+     background: rgba(255, 255, 255, 0.275) !important;
+}
+
+#work h2 {
+    text-align: center;
+    width: auto;
+}
+
+#work h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: -36px;
+
+
+}	#switchContainer {
+    position:relative;
+    height: 375px;
+    width: 100%;
+    margin:0 auto;
+}
+
+#switchContainer #swap {
+    position: absolute;
+    left:84%;
+    top:67%;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0 0.65rem 0 0.75rem;
+    -webkit-transition: opacity 1s ease-in-out, font-size 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out, font-size 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+    -o-transition: opacity 1s ease-in-out, font-size 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+    transition: opacity 1s ease-in-out, font-size 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+#switchContainer #swap img {
+    margin: 0;
+    position: relative;
+    opacity: 1;
+}
+
+#switchContainer img {
+    display: block;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 2.5rem 0;
+    width: 100%;
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+#switchContainer .transparent {
+    opacity:0;
+    }
+#switchContainer button.transparent {
+        opacity:0;
+        display: none;
+    }
+
+@media screen and (min-width: 1680px) {
+#switchContainer{
+        height: 498px;
+    }
+}
